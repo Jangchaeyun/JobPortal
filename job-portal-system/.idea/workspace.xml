@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34106dd2-f895-48f2-9769-7f36b1aea8c7" name="Changes" comment="" />
+    <list default="true" id="34106dd2-f895-48f2-9769-7f36b1aea8c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/sally/job/domain/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-user-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/resources/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,67 +21,78 @@
     <option name="cachedIndexableFilesCount" value="19" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000000000006299" />
-      <entry key="S2" value="1.0015844022091216" />
-      <entry key="S5" value="1.078836520450664" />
-      <entry key="S10" value="1.3644684782405045" />
-      <entry key="S30" value="3.0215731437009867" />
-      <entry key="S60" value="5.63341574525261" />
-      <entry key="M2" value="9.866959883771754" />
-      <entry key="M5" value="16.44688958544771" />
-      <entry key="M10" value="21.172888126180272" />
-      <entry key="M15" value="24.532715843899403" />
-      <entry key="M30" value="34.40573583707306" />
-      <entry key="H1" value="49.88175937456359" />
-      <entry key="H2" value="65.31768118991735" />
-      <entry key="H4" value="76.50524331523503" />
-      <entry key="D1" value="88.31357913568712" />
-      <entry key="W1" value="90.60898595678528" />
+      <entry key="MS100" value="0.026830169888679797" />
+      <entry key="MS500" value="0.48498095517086764" />
+      <entry key="S2" value="0.8348178104478762" />
+      <entry key="S5" value="1.0301899625070667" />
+      <entry key="S10" value="1.6846643753201733" />
+      <entry key="S30" value="3.9841644330330035" />
+      <entry key="S60" value="5.786572801583593" />
+      <entry key="M2" value="8.57359716750111" />
+      <entry key="M5" value="14.78878925286892" />
+      <entry key="M10" value="20.024005394922234" />
+      <entry key="M15" value="23.078519296081346" />
+      <entry key="M30" value="30.957980250218625" />
+      <entry key="H1" value="48.68540691222779" />
+      <entry key="H2" value="75.5691449260295" />
+      <entry key="H4" value="101.34059492695042" />
+      <entry key="D1" value="134.55817567396298" />
+      <entry key="W1" value="141.75063039535064" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="5.38921675106011E-291" />
-      <entry key="S5" value="7.809266797322218E-117" />
-      <entry key="S10" value="8.837005599931588E-59" />
-      <entry key="S30" value="4.4541862890592467E-20" />
-      <entry key="S60" value="2.1104967309047425E-10" />
-      <entry key="M2" value="1.4546910022314275E-5" />
-      <entry key="M5" value="0.013045249140661852" />
-      <entry key="M10" value="0.18376314419923503" />
-      <entry key="M15" value="0.5481810925178444" />
-      <entry key="M30" value="2.068266498357093" />
-      <entry key="H1" value="4.55059957699765" />
-      <entry key="H2" value="6.992559742607987" />
-      <entry key="H4" value="8.745017176777793" />
-      <entry key="D1" value="10.583168583437493" />
-      <entry key="W1" value="10.939357351598401" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000156389155412" />
+      <entry key="S5" value="1.0119586637221418" />
+      <entry key="S10" value="1.1093556753083342" />
+      <entry key="S30" value="1.4782046288491903" />
+      <entry key="S60" value="1.6915234858498827" />
+      <entry key="M2" value="1.8319488665123798" />
+      <entry key="M5" value="1.9924691150687956" />
+      <entry key="M10" value="2.319841579808914" />
+      <entry key="M15" value="2.6113957059112476" />
+      <entry key="M30" value="3.267897947488785" />
+      <entry key="H1" value="4.741441261370096" />
+      <entry key="H2" value="7.390569748858309" />
+      <entry key="H4" value="10.187900608472482" />
+      <entry key="D1" value="14.003653215102638" />
+      <entry key="W1" value="14.851974583882216" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8585654364377537" />
-      <entry key="MS500" value="0.9699619103478873" />
-      <entry key="S2" value="0.9939794688239392" />
-      <entry key="S5" value="1.0756008026945705" />
-      <entry key="S10" value="1.362432502804812" />
-      <entry key="S30" value="3.0198746620492094" />
-      <entry key="S60" value="5.630662385671483" />
-      <entry key="M2" value="9.860583748020847" />
-      <entry key="M5" value="16.451347669841343" />
-      <entry key="M10" value="21.34925910723529" />
-      <entry key="M15" value="25.07382568046546" />
-      <entry key="M30" value="36.46658430416422" />
-      <entry key="H1" value="54.425578274206075" />
-      <entry key="H2" value="72.30536248329656" />
-      <entry key="H4" value="85.24729224099754" />
-      <entry key="D1" value="98.8961611258348" />
-      <entry key="W1" value="101.54825697475337" />
+      <entry key="MS100" value="0.034434534871144076" />
+      <entry key="MS500" value="0.5097988414991533" />
+      <entry key="S2" value="0.8457417205759271" />
+      <entry key="S5" value="1.085600666386235" />
+      <entry key="S10" value="1.9814909349947292" />
+      <entry key="S30" value="5.020925488446595" />
+      <entry key="S60" value="7.221013061375356" />
+      <entry key="M2" value="10.262285999739522" />
+      <entry key="M5" value="16.715497931118044" />
+      <entry key="M10" value="22.307256454532684" />
+      <entry key="M15" value="25.663983145536797" />
+      <entry key="M30" value="34.21121119334928" />
+      <entry key="H1" value="53.41747573527694" />
+      <entry key="H2" value="82.9532432767822" />
+      <entry key="H4" value="111.52433969483904" />
+      <entry key="D1" value="148.56093045916097" />
+      <entry key="W1" value="156.60247014964094" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -82,6 +100,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="3Dtm9bY9y9BeUtZoG24HKlYjqs5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -90,11 +111,18 @@
   "keyToString": {
     "Maven.job-portal-system [clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.JobPortalUserServiceApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -135,6 +163,7 @@
       <workItem from="1779109599108" duration="32000" />
       <workItem from="1779187979689" duration="906000" />
       <workItem from="1779188933360" duration="6609000" />
+      <workItem from="1779275022646" duration="5217000" />
     </task>
     <servers />
   </component>
