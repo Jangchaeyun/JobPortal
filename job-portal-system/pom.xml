@@ -42,11 +42,11 @@
                 <scope>import</scope>
             </dependency>
 
-            <!--<dependency>
+            <dependency>
                 <groupId>com.sally.job</groupId>
                 <artifactId>job-portal-common</artifactId>
                 <version>${project.version}</version>
-            </dependency>-->
+            </dependency>
 
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
