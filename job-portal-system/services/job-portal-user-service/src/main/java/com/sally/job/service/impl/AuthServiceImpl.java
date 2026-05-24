@@ -1,6 +1,7 @@
 package com.sally.job.service.impl;
 
 import com.sally.job.domain.UserRole;
+import com.sally.job.domain.UserStatus;
 import com.sally.job.mapper.UserMapper;
 import com.sally.job.modal.User;
 import com.sally.job.payload.AuthResponse;
@@ -36,6 +37,7 @@ public class AuthServiceImpl implements AuthService {
                 .role(req.getRole())
                 .phone(req.getPhone())
                 .lastLogin(LocalDateTime.now())
+                .status(UserStatus.ACTIVE)
                 .build();
 
         User savedUser = userRepository.save(user);

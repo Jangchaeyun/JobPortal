@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34106dd2-f895-48f2-9769-7f36b1aea8c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/sally/job/domain/UserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/sally/job/dto/response/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/modal/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/payload/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/payload/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/payload/SignupRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/job-portal-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/modal/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/modal/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/sally/job/service/impl/AuthServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="34" />
+    <option name="cachedIndexableFilesCount" value="35" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -52,61 +41,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000298817367061" />
-      <entry key="MS500" value="1.2475122333969864" />
-      <entry key="S2" value="2.140064691231797" />
-      <entry key="S5" value="2.619202682304657" />
-      <entry key="S10" value="2.9500422807753477" />
-      <entry key="S30" value="3.7890588899354447" />
-      <entry key="S60" value="5.7817669519766115" />
-      <entry key="M2" value="11.045351955957138" />
-      <entry key="M5" value="24.485530285073807" />
-      <entry key="M10" value="40.43446147454252" />
-      <entry key="M15" value="53.03604404091316" />
-      <entry key="M30" value="85.61168164056315" />
-      <entry key="H1" value="139.28555372554288" />
-      <entry key="H2" value="210.06437660488666" />
-      <entry key="H4" value="280.5637743466465" />
-      <entry key="D1" value="381.30931039744786" />
-      <entry key="W1" value="404.84585138595105" />
+      <entry key="MS100" value="2.799298302636356E-13" />
+      <entry key="MS500" value="0.003086098874466316" />
+      <entry key="S2" value="0.23569613397955985" />
+      <entry key="S5" value="0.5609717402652423" />
+      <entry key="S10" value="0.7489804672120911" />
+      <entry key="S30" value="0.9081484177215096" />
+      <entry key="S60" value="0.9529682194941675" />
+      <entry key="M2" value="0.9762881896505101" />
+      <entry key="M5" value="1.1031066051341356" />
+      <entry key="M10" value="3.567278833734803" />
+      <entry key="M15" value="9.498918792047498" />
+      <entry key="M30" value="35.84951745731981" />
+      <entry key="H1" value="91.12065833659625" />
+      <entry key="H2" value="172.38877642480756" />
+      <entry key="H4" value="258.24468745213676" />
+      <entry key="D1" value="386.7094329978842" />
+      <entry key="W1" value="417.5312408138972" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.288834422951419E-270" />
-      <entry key="MS500" value="1.3399732816527908E-54" />
-      <entry key="S2" value="4.064500414710043E-14" />
-      <entry key="S5" value="6.23046253130865E-6" />
-      <entry key="S10" value="0.0034967976426571513" />
-      <entry key="S30" value="0.3062733103543124" />
-      <entry key="S60" value="1.59999881475112" />
-      <entry key="M2" value="5.014570376375495" />
-      <entry key="M5" value="12.407044884010208" />
-      <entry key="M10" value="20.808156148671905" />
-      <entry key="M15" value="27.80982864221668" />
-      <entry key="M30" value="44.34272077045105" />
-      <entry key="H1" value="65.9505291403011" />
-      <entry key="H2" value="88.47458367025887" />
-      <entry key="H4" value="107.09322137292178" />
-      <entry key="D1" value="130.13363736923966" />
-      <entry key="W1" value="135.12984083538635" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000002308680561" />
+      <entry key="S5" value="1.0055634672834262" />
+      <entry key="S10" value="1.074588653851817" />
+      <entry key="S30" value="1.4209439348721178" />
+      <entry key="S60" value="1.6488019273181287" />
+      <entry key="M2" value="1.8055842188348232" />
+      <entry key="M5" value="2.0376935393146036" />
+      <entry key="M10" value="4.114558750145816" />
+      <entry key="M15" value="8.430403900061117" />
+      <entry key="M30" value="24.981804058926496" />
+      <entry key="H1" value="52.8116888341979" />
+      <entry key="H2" value="84.95142139172863" />
+      <entry key="H4" value="112.71680035982129" />
+      <entry key="D1" value="147.92444680383736" />
+      <entry key="W1" value="155.65129126624564" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0047105852264667375" />
-      <entry key="MS500" value="0.4222445849610976" />
-      <entry key="S2" value="1.6508091801658873" />
-      <entry key="S5" value="2.364540614700403" />
-      <entry key="S10" value="2.802958107517517" />
-      <entry key="S30" value="4.011725013524873" />
-      <entry key="S60" value="7.286769819684648" />
-      <entry key="M2" value="15.932671136031114" />
-      <entry key="M5" value="36.749222834878374" />
-      <entry key="M10" value="61.10891751763574" />
-      <entry key="M15" value="80.72435423182061" />
-      <entry key="M30" value="129.85871873554098" />
-      <entry key="H1" value="205.16605769096904" />
-      <entry key="H2" value="298.4920864868479" />
-      <entry key="H4" value="387.62850189423864" />
-      <entry key="D1" value="511.4371278003529" />
-      <entry key="W1" value="539.9748271407593" />
+      <entry key="MS100" value="2.951746088308401E-6" />
+      <entry key="MS500" value="0.08092297766577145" />
+      <entry key="S2" value="0.7543717087070939" />
+      <entry key="S5" value="1.3285410619271225" />
+      <entry key="S10" value="1.6717981849794339" />
+      <entry key="S30" value="2.230034393253625" />
+      <entry key="S60" value="2.5356557278455254" />
+      <entry key="M2" value="2.7429913883425923" />
+      <entry key="M5" value="3.1225250981448465" />
+      <entry key="M10" value="7.6625947935941525" />
+      <entry key="M15" value="17.901190356542887" />
+      <entry key="M30" value="60.78603626026295" />
+      <entry key="H1" value="143.88247971473965" />
+      <entry key="H2" value="257.298999065339" />
+      <entry key="H4" value="370.93363781543536" />
+      <entry key="D1" value="534.627661994533" />
+      <entry key="W1" value="573.1815936041282" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -121,35 +110,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.job-portal-system [clean].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.JobPortalUserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.job-portal-system [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.JobPortalUserServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.sally.job.payload" />
@@ -191,10 +180,15 @@
       <workItem from="1779448070175" duration="17000" />
       <workItem from="1779448128802" duration="6478000" />
       <workItem from="1779537893543" duration="3870000" />
+      <workItem from="1779623987956" duration="3761000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
