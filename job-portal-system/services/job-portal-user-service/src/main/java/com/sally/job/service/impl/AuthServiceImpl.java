@@ -10,6 +10,7 @@ import com.sally.job.payload.SignupRequest;
 import com.sally.job.repository.UserRepository;
 import com.sally.job.service.AuthService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -19,6 +20,7 @@ import java.time.LocalDateTime;
 public class AuthServiceImpl implements AuthService {
 
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public AuthResponse signup(SignupRequest req) throws Exception {
@@ -33,7 +35,7 @@ public class AuthServiceImpl implements AuthService {
         User user = User.builder()
                 .fullName(req.getFullName())
                 .email(req.getEmail())
-                .password(req.getPassword())
+                .password(passwordEncoder.encode(req.getPassword()))
                 .role(req.getRole())
                 .phone(req.getPhone())
                 .lastLogin(LocalDateTime.now())
