@@ -8,8 +8,12 @@ import com.sally.job.payload.AuthResponse;
 import com.sally.job.payload.LoginRequest;
 import com.sally.job.payload.SignupRequest;
 import com.sally.job.repository.UserRepository;
+import com.sally.job.security.JwtProvider;
 import com.sally.job.service.AuthService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +25,7 @@ public class AuthServiceImpl implements AuthService {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+    private final JwtProvider jwtProvider;
 
     @Override
     public AuthResponse signup(SignupRequest req) throws Exception {
@@ -44,10 +49,18 @@ public class AuthServiceImpl implements AuthService {
 
         User savedUser = userRepository.save(user);
 
+        Authentication authentication = new UsernamePasswordAuthenticationToken(
+                user.getEmail(), user.getPassword()
+        );
+
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+
+        String jwt = jwtProvider.generateToken(authentication, savedUser.getId());
+
         AuthResponse res = new AuthResponse();
         res.setTitle("welcome " + savedUser.getFullName());
         res.setMessage("Registered successfully");
-        res.setJwt("jwt");
+        res.setJwt(jwt);
         res.setUser(UserMapper.toDTO(savedUser));
 
         return res;
