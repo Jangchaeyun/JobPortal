@@ -1,6 +1,7 @@
 package com.sally.job.controller;
 
 import com.sally.job.payload.AuthResponse;
+import com.sally.job.payload.LoginRequest;
 import com.sally.job.payload.SignupRequest;
 import com.sally.job.service.AuthService;
 import jakarta.validation.Valid;
@@ -24,7 +25,10 @@ public class AuthController {
         return ResponseEntity.ok(authService.signup(req));
     }
 
-
-
-
+    @PostMapping("/login")
+    public ResponseEntity<AuthResponse> login(
+            @RequestBody @Valid LoginRequest req
+    ) throws Exception {
+        return ResponseEntity.ok(authService.signin(req));
+    }
 }

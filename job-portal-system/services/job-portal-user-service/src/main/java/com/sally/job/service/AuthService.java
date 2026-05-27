@@ -6,5 +6,5 @@ import com.sally.job.payload.SignupRequest;
 
 public interface AuthService {
     AuthResponse signup(SignupRequest req) throws Exception;
-    AuthResponse signin(LoginRequest req);
+    AuthResponse signin(LoginRequest req) throws Exception;
 }
