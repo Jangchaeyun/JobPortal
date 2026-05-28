@@ -3,6 +3,9 @@ package com.sally.job.mapper;
 import com.sally.job.dto.response.UserResponse;
 import com.sally.job.modal.User;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class UserMapper {
     public static UserResponse toDTO(User user) {
         UserResponse dto = new UserResponse();
@@ -17,5 +20,9 @@ public class UserMapper {
         dto.setCreatedAt(user.getCreatedAt());
 
         return dto;
+    }
+
+    public static List<UserResponse> toDTOList(List<User> users) {
+        return users.stream().map(UserMapper::toDTO).collect(Collectors.toList());
     }
 }
