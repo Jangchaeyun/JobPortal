@@ -7,7 +7,7 @@
         <groupId>com.sally.job</groupId>
         <artifactId>job-portal-system</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath /><!-- lookup parent from repository -->
     </parent>
 
     <artifactId>job-portal-service</artifactId>
@@ -19,5 +19,6 @@
 
     <modules>
         <module>job-portal-user-service</module>
+        <module>job-portal-company-service</module>
     </modules>
 </project>

@@ -1,0 +1,59 @@
+package com.sally.job.modal;
+
+import com.sally.job.domain.CompanySize;
+import com.sally.job.domain.CompanyStatus;
+import com.sally.job.domain.CompanyType;
+import com.sally.job.domain.IndustryType;
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@Builder
+@Table(name = "companies")
+public class Company {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    @Column(unique = true, nullable = false)
+    private String name;
+
+    @Column(unique = true)
+    private String slug;
+
+    private String tagline;
+
+    private String description;
+
+    private String logoUrl;
+
+    private String coverImageUrl;
+    private String website;
+    private Integer foundedYear;
+
+    @Enumerated(EnumType.STRING)
+    private CompanySize companySize;
+
+    @Enumerated(EnumType.STRING)
+    private CompanyType companyType;
+
+    @Enumerated(EnumType.STRING)
+    private IndustryType industryType;
+
+    private CompanyStatus companyStatus;
+
+    @Column(unique = true)
+    private String registrationNumber;
+
+    @Column(nullable = false, unique = true)
+    private Long ownerId;
+
+    private List<SocialLink> socialLinks = new ArrayList<>();
+}
