@@ -27,8 +27,14 @@
             <artifactId>lombok</artifactId>
             <scope>annotationProcessor</scope>
         </dependency>
+        <dependency>
+            <groupId>com.sally.job</groupId>
+            <artifactId>job-portal-company-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
 
-<!--        <dependency>-->
+        <!--        <dependency>-->
 <!--            <groupId>com.fasterxml.jacson.core</groupId>-->
 <!--            <artifactId>jackson-annotations</artifactId>-->
 <!--            <scope>test</scope>-->
